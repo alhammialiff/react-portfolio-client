@@ -9,9 +9,9 @@ function MainSectionComponent(){
     * 2. Dashboard Section
     */
     return (
-        <div className='container main-section-container'>
-            <div className='row d-flex justify-content-center'>
-                <div className='col'>
+        <div className='container-fluid main-section-container'>
+            <div className='row'>
+                <div className='col justify-content-center'>
                     <InitialPageComponent />
                 </div>
             </div>

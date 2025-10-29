@@ -1,5 +1,11 @@
 @import './../../../../variables.scss';
 
+h1, h2, h3, h4, h5{
+    font-weight: 400;
+    color: $primary-font-color;
+
+}
+
 .initial-page-container{
     height: 100vh;
     border: 1px solid green;
@@ -10,12 +16,30 @@
     border: 1px solid rgb(118, 27, 223);
 }
 
-h1, h2, h3, h4, h5{
-    font-weight: 400;
-    color: $primary-font-color;
-
+.initial-form-section{
+    margin-top: 5vh;    
 }
 
 #statement-hook{
     font-weight: 700;
+}
+
+input{
+    width: 20vw;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+}
+
+button{
+    max-width: 20vw;
+    width: 40vw;
+    height: 60px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(167, 39, 39);
+    box-shadow: 1px 1px 5px rgb(149, 149, 149);
 }
