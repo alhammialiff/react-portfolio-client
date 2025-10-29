@@ -1,19 +1,26 @@
+@import './../../variables.scss';
+
 .top-bar-container{
     width: 100vw;
-    height: 5vh;
+    height: 50px;
     position:fixed;
     top: 0px;
     left: 0px;
     border: 1px solid black;
+    background-color: $primary-black;
+    
 }
 
 .top-bar-content{
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .top-bar-nav-link{
     padding: 0px 10px;
+}
+
+.top-bar-nav-link:hover{
+    transition: 1px 
 }

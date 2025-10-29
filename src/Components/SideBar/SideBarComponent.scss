@@ -1,0 +1,21 @@
+@import './../../variables.scss';
+
+.side-bar-container{
+    width: 150px;
+    height: 100vh;
+    position:fixed;
+    top: 50px;
+    left: 0px;
+    border: 1px solid black;
+    background-color: $primary-black;
+}
+
+.side-bar-nav-content{
+    border: 1px solid black;
+}
+
+.side-bar-nav-link{
+
+    cursor: pointer;
+
+}

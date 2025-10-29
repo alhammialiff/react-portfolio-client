@@ -1,3 +1,4 @@
+import SideBarComponent from "../SideBar/SideBarComponent";
 import TopBarComponent from "../TopBar/TopBarComponent";
 import './MainContainerComponent.scss';
 
@@ -16,9 +17,10 @@ function MainContainerComponent(){
 
     // I need a top bar and a content section component
     return (
-
-        <TopBarComponent></TopBarComponent>
-
+        <>
+            <TopBarComponent></TopBarComponent>
+            <SideBarComponent></SideBarComponent>
+        </>
     );
 
 }

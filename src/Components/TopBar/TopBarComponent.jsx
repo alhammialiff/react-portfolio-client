@@ -5,7 +5,7 @@ export function TopBarComponent(){
     return (
 
         <div className="top-bar-container">
-            <div className="top-bar-content">
+            <div className="top-bar-content px-2">
                 <div className="top-bar-nav-link">
                     Home
                 </div>
