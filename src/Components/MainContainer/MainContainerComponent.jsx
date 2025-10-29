@@ -1,5 +1,6 @@
-import SideBarComponent from "../SideBar/SideBarComponent";
-import TopBarComponent from "../TopBar/TopBarComponent";
+import MainSectionComponent from "./MainSection/MainSectionComponent";
+import SideBarComponent from "./SideBar/SideBarComponent";
+import TopBarComponent from "./TopBar/TopBarComponent";
 import './MainContainerComponent.scss';
 
 /**
@@ -17,10 +18,11 @@ function MainContainerComponent(){
 
     // I need a top bar and a content section component
     return (
-        <>
+        <div className="root-container">
             <TopBarComponent></TopBarComponent>
             <SideBarComponent></SideBarComponent>
-        </>
+            <MainSectionComponent></MainSectionComponent>
+        </div>
     );
 
 }

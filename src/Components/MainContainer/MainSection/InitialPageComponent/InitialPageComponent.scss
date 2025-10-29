@@ -1,0 +1,21 @@
+@import './../../../../variables.scss';
+
+.initial-page-container{
+    height: 100vh;
+    border: 1px solid green;
+}
+
+.jumbotron-section{
+    height: 30vh;
+    border: 1px solid rgb(118, 27, 223);
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: 400;
+    color: $primary-font-color;
+
+}
+
+#statement-hook{
+    font-weight: 700;
+}
