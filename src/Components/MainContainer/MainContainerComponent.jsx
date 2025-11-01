@@ -1,7 +1,10 @@
-import MainSectionComponent from "./MainSection/MainSectionComponent";
 import SideBarComponent from "./SideBar/SideBarComponent";
 import TopBarComponent from "./TopBar/TopBarComponent";
 import './MainContainerComponent.scss';
+import { Routes, Route } from 'react-router-dom';
+import InitialPageComponent from "./InitialPageComponent/InitialPageComponent";
+import DashboardComponent from "./DashboardComponent/DashboardComponent";
+
 
 /**
  * Main Container Component
@@ -21,7 +24,10 @@ function MainContainerComponent(){
         <div className="root-container">
             <TopBarComponent></TopBarComponent>
             <SideBarComponent></SideBarComponent>
-            <MainSectionComponent></MainSectionComponent>
+            <Routes>
+                <Route path="/*" element={<InitialPageComponent />} />
+                <Route path="/dashboard" element={<DashboardComponent />} />
+            </Routes>
         </div>
     );
 

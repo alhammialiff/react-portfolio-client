@@ -1,6 +1,9 @@
 import './InitialPageComponent.scss';
+import { useNavigate } from 'react-router-dom';
 
 function InitialPageComponent(){
+
+    const navigate = useNavigate();
 
     /**
     * Should route between:
@@ -53,7 +56,7 @@ function InitialPageComponent(){
 
                         <div className="row mb-3">
                             <div className="col text-center">
-                                <button type="button">Go</button>
+                                <button type="button" onClick={() => navigate('/dashboard')}>Go</button>
                             </div>
                         </div>
                     </div>
